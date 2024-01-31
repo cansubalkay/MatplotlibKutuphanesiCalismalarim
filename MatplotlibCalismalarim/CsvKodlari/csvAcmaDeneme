@@ -1,0 +1,13 @@
+import csv
+
+# CSV dosyasının adı
+dosya_adi = "data_gen.csv"
+
+
+# CSV dosyasını yazma modunda aç
+with open(dosya_adi, mode='w', newline='') as dosya:
+    # CSV dosyasını yazma işlemi için bir writer nesnesi oluştur
+    yazici = csv.writer(dosya)
+    
+   
+print(f"{dosya_adi} dosyası oluşturuldu.")
